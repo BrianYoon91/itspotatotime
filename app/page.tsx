@@ -4,6 +4,7 @@ import { movieGenres, showGenres } from "./constant";
 import { OptionSelector } from "./components/OptionSelector";
 import { getRandomTitle } from "./actions/getRandomTitle";
 import MediaCard from "./components/MediaCard";
+import { PickedMedia } from "./components/MediaCard";
 
 export default function Home() {
 	const [pickedMedia, setPickedMedia] = useState<any>(null);
