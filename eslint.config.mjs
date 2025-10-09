@@ -19,17 +19,11 @@ const eslintConfig = [
 			"build/**",
 			"next-env.d.ts",
 		],
+	},
+	{
 		rules: {
-			// ✅ Allow `any`, but show a warning instead of failing build
-			"@typescript-eslint/no-explicit-any": "warn",
-
-			// Optional: downgrade other annoying ones
-			"@typescript-eslint/no-unused-vars": [
-				"warn",
-				{ argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
-			],
-			"@next/next/no-img-element": "warn",
-			"jsx-a11y/alt-text": "warn",
+			// 👇 turn off the "no explicit any" error
+			"@typescript-eslint/no-explicit-any": "off",
 		},
 	},
 ];
