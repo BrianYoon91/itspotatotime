@@ -62,7 +62,8 @@ export default function Home() {
 									transition-all duration-200"
 									onClick={() => handlePick(genreId, pickedMedia.type)}
 								>
-									Get Another {genre} Genre
+									Get Another {genre}{" "}
+									{pickedMedia.type === "movie" ? "Movie" : "Show"}
 								</button>
 							)}
 							<MediaCard
