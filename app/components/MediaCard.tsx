@@ -18,7 +18,11 @@ export const MediaCard = ({ title, type, date, rating, url }: PickedMedia) => {
 				<p className="text-center font-semibold">Rating:{rating}/10</p>
 			</div>
 			<div className="mt-4">
-				<img className="w-96 h-[480px] rounded-2xl" src={url} />
+				{url ? (
+					<img className="w-96 h-[480px] rounded-2xl" src={url} />
+				) : (
+					<p className="text-center">No Image Available</p>
+				)}
 			</div>
 		</div>
 	);
